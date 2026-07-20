@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulie électronique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">
+                <img src="assets/images/LOGO.png" alt="Zulie Electronique">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a class="active" href="#hero">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header Right -->
+        <div class="header-right">
+
+            <div class="favorite-icon">
+                <i class="fa-regular fa-heart"></i>
+                <span id="favorite-count">0</span>
+            </div>
+
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+
+            <button id="login-btn">
+                Connexion
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+        <!-- section hero -->
+        <section id="hero">
+            <div class="gauche">
+                <h1>Bienvenue chez <span>Zulie</span></h1>
+                <p>
+                    Découvrez les meilleurs appareils électroniques :
+                    smartphones, ordinateurs, casques, montres connectées,
+                    accessoires et bien plus encore, avec qualité garantie
+                    et des prix compétitifs.
+                </p>
+                <button>Acheter Maintenant</button>
+                <button>Voir Produits</button>
+            </div>
+
+            <div class="droite">
+                <img src="assets/images/image1.2-removebg-preview.png" />
+                <div class="effects">
+                    <div class="cercle"></div>
+                    <div class="cercle"></div>
+                    <div class="cercle"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section services -->
+        <section id="services">
+
+            <h2>Nos Services</h2>
+
+            <div class="services-liste">
+
+                <div class="card-service">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+
+                    <h3>Livraison rapide</h3>
+
+                    <p>
+                        Recevez vos produits électroniques rapidement
+                        et en toute sécurité directement chez vous.
+                    </p>
+
+                </div>
+
+
+                <div class="card-service">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>Garantie produits</h3>
+
+                    <p>
+                        Nous proposons des appareils de qualité avec
+                        une garantie pour votre tranquillité.
+                    </p>
+
+                </div>
+
+
+                <div class="card-service">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+
+                    <h3>Paiement sécurisé</h3>
+
+                    <p>
+                        Effectuez vos achats avec des méthodes de paiement
+                        simples, fiables et sécurisées.
+                    </p>
+
+                </div>
+
+
+                <div class="card-service">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>Support 24/7</h3>
+
+                    <p>
+                        Notre équipe reste disponible pour vous accompagner
+                        avant et après votre achat.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!--================== PRODUITS ==================-->
+
+        <section id="products">
+
+            <div class="section-title">
+
+                <span class="section-tag">Notre Catalogue</span>
+
+                <h2>Nos Produits</h2>
+
+                <p>
+                    Découvrez une large sélection d'appareils électroniques
+                    de qualité adaptés à tous vos besoins.
+                </p>
+
+            </div>
+
+            <!-- Barre de recherche + filtre -->
+
+            <div class="products-options">
+
+                <input type="text" id="search-product" placeholder="🔍 Rechercher un produit...">
+
+                <select id="filter-category">
+
+                    <option value="all">Toutes les catégories</option>
+
+                    <option value="ordinateur">Ordinateurs</option>
+
+                    <option value="smartphone">Smartphones</option>
+
+                    <option value="montre">Montres connectées</option>
+
+                    <option value="accessoire">Accessoires</option>
+
+                </select>
+
+            </div>
+
+            <!-- Boutons de catégories -->
+
+            <div class="categories">
+
+                <button class="active">Tous</button>
+
+                <button>Ordinateurs</button>
+
+                <button>Smartphones</button>
+
+                <button>Montres</button>
+
+                <button>Accessoires</button>
+
+            </div>
+
+            <!-- Les cartes seront générées avec JavaScript -->
+
+            <div class="products-container">
+
+            </div>
+
+        </section>
+
+        <!--================== POURQUOI NOUS CHOISIR ==================-->
+
+        <section id="why-us">
+
+            <div class="section-title">
+
+                <span class="section-tag">
+                    Pourquoi Nous Choisir
+                </span>
+
+                <h2>Pourquoi choisir Zulie Electronique ?</h2>
+
+                <p>
+                    Nous mettons tout en œuvre pour vous offrir une expérience
+                    d'achat simple, rapide et sécurisée avec des produits de qualité.
+                </p>
+
+            </div>
+
+            <div class="why-container">
+
+                <!-- Card 1 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <h3>Qualité Garantie</h3>
+
+                    <p>
+                        Tous nos produits sont sélectionnés avec soin
+                        pour garantir performance et fiabilité.
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+
+                    <h3>Livraison Rapide</h3>
+
+                    <p>
+                        Recevez vos commandes rapidement
+                        et en toute sécurité partout.
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>Support 24/7</h3>
+
+                    <p>
+                        Notre équipe est disponible pour répondre
+                        à toutes vos questions.
+                    </p>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>Paiement Sécurisé</h3>
+
+                    <p>
+                        Achetez en toute confiance grâce à
+                        des méthodes de paiement fiables.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--section contact-->
+        <!--================ CONTACT =================-->
+
+        <section id="contact">
+
+            <div class="section-title">
+
+                <span class="section-tag">
+                    Contact
+                </span>
+
+                <h2>Contactez-nous</h2>
+
+                <p>
+                    Une question ? Une demande d'information ?
+                    Notre équipe est toujours prête à vous répondre.
+                </p>
+
+            </div>
+
+            <div class="contact-container">
+
+                <!-- Informations -->
+
+                <div class="contact-info">
+
+                    <div class="info-box">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <h3>Adresse</h3>
+
+                            <p>Cap-Haïtien, Haïti</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <h3>Téléphone</h3>
+
+                            <p>+509 3604-1682</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <h3>Email</h3>
+
+                            <p>contact@zulie.ht</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+
+                            <h3>Horaires</h3>
+
+                            <p>Lundi - Samedi : 8h00 - 18h00</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Formulaire -->
+
+                <form id="contact-form">
+
+                    <input type="text" placeholder="Votre nom" required>
+
+                    <input type="email" placeholder="Votre email" required>
+
+                    <input type="text" placeholder="Sujet">
+
+                    <textarea rows="6" placeholder="Votre message..." required></textarea>
+
+                    <button type="submit">
+
+                        Envoyer le message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- apropos de nous-->
+        <!--================== À PROPOS ==================-->
+
+        <section id="about">
+
+            <div class="about-image">
+
+                <img src="assets/images/brand.png" alt="À propos de Zoulie">
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    À Propos
+                </span>
+
+                <h2>Votre partenaire de confiance en produits électroniques</h2>
+
+                <p>
+
+                    Chez <strong>Zulie Electronique</strong>, notre mission est
+                    de rendre la technologie accessible à tous grâce à des
+                    produits fiables, des prix compétitifs et un service
+                    client de qualité.
+
+                </p>
+
+                <p>
+
+                    Nous proposons une large gamme d'appareils électroniques,
+                    d'accessoires et d'équipements modernes répondant aux besoins
+                    des particuliers comme des professionnels.
+
+                </p>
+
+                <div class="about-features">
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Produits 100% Authentiques
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Garantie Officielle
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Livraison Rapide
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Assistance Professionnelle
+
+                    </div>
+
+                </div>
+
+                <a href="#products" class="about-btn">
+
+                    Découvrir Nos Produits
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!--section footer-->
+        <!--================== FOOTER ==================-->
+
+        <footer id="footer">
+
+            <div class="footer-container">
+
+                <!-- Logo -->
+
+                <div class="footer-box">
+
+                    <img src="assets/images/segondary__logo-removebg-preview.png" alt="Logo Zoulie" class="footer-logo">
+
+                    <p>
+                        Zulie Electronique est votre partenaire de confiance
+                        pour l'achat d'appareils électroniques modernes,
+                        fiables et accessibles.
+                    </p>
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <div class="footer-box">
+
+                    <h3>Navigation</h3>
+
+                    <ul>
+
+                        <li><a href="#hero">Accueil</a></li>
+
+                        <li><a href="#products">Produits</a></li>
+
+                        <li><a href="#about">À propos</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Catégories -->
+
+                <div class="footer-box">
+
+                    <h3>Catégories</h3>
+
+                    <ul>
+
+                        <li><a href="#">Ordinateurs</a></li>
+
+                        <li><a href="#">Smartphones</a></li>
+
+                        <li><a href="#">Montres Connectées</a></li>
+
+                        <li><a href="#">Accessoires</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-box">
+
+                    <h3>Contact</h3>
+
+                    <p><i class="fa-solid fa-location-dot"></i> Cap-Haïtien, Haïti rue 9E</p>
+
+                    <p><i class="fa-solid fa-phone"></i> +509 3604-1682</p>
+
+                    <p><i class="fa-solid fa-envelope"></i>zuliemultiservices01@gmail.com</p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 <strong>Zulie Electronique</strong> |
+                    Tous droits réservés.
+                </p>
+
+            </div>
+
+        </footer>
+
+        <!--media sociaux liens-->
+
+        <div class="reseaux">
+            <div class="carte">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+
+            <div class="carte">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="carte">
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </main>
+
+    <!-- Container pour les Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal de Connexion (Login & Inscription) -->
+    <div id="login-modal-overlay" class="login-modal-overlay">
+        <div class="login-modal-card">
+            <button id="login-modal-close" class="login-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="login-modal-header">
+                <h2 id="modal-title">Se Connecter</h2>
+                <p id="modal-desc">Veuillez vous connecter pour interagir avec le site</p>
+            </div>
+            <form id="login-form">
+                <!-- Nom Complet (Inscriptions uniquement) -->
+                <div class="login-form-group signup-only">
+                    <label for="login-name">Nom Complet</label>
+                    <input type="text" id="login-name" placeholder="John Doe" autocomplete="name">
+                </div>
+
+                <!-- Email (Les deux modes) -->
+                <div class="login-form-group">
+                    <label for="login-email">Adresse Email</label>
+                    <input type="email" id="login-email" placeholder="exemple@zulie.ht" required
+                        autocomplete="username">
+                </div>
+
+                <!-- Mot de passe (Les deux modes) -->
+                <div class="login-form-group">
+                    <label for="login-password">Mot de passe</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required
+                        autocomplete="current-password">
+                </div>
+
+                <!-- Confirmer le mot de passe (Inscriptions uniquement) -->
+                <div class="login-form-group signup-only">
+                    <label for="login-confirm-password">Confirmer le mot de passe</label>
+                    <input type="password" id="login-confirm-password" placeholder="••••••••"
+                        autocomplete="new-password">
+                </div>
+
+                <!-- Se souvenir / Mot de passe oublié (Connexion uniquement) -->
+                <div class="login-remember-forgot login-only">
+                    <label>
+                        <input type="checkbox" id="login-remember"> Se souvenir de moi
+                    </label>
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+
+                <button type="submit" class="login-submit-btn">
+                    <span id="submit-btn-text"><i class="fa-solid fa-right-to-bracket"></i> Connexion</span>
+                </button>
+            </form>
+            <div class="modal-toggle-mode">
+                <p id="toggle-mode-text">Pas encore de compte ? <a id="toggle-mode-link">S'inscrire</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
